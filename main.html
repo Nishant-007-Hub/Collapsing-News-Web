@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
-    
     <head>
-    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,26 +9,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Collapsing News</title>
 </head>
 
-<body>
-
- <h1 class="visually-hidden">Heroes examples</h1>
-
-  <div class="px-4 py-5 my-5 text-center">
+<body style="background-image: url('news.jpg');">
+  <div class="px-2 py-2 text-center">
     <img class="d-block mx-auto mb-4" src="news.png" alt="" width="400" height="200">
     <h1 class="display-5 fw-bold">Welcome to Collapsing News</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">News is information about current events. This may be provided through many different media: word of mouth, printing, postal systems, broadcasting, electronic communication, or through the testimony of observers and witnesses to events. News is sometimes called "hard news" to differentiate it from soft media.</p>
+
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
       </div>
     </div>
-  </div>
-
-    <p id="id1"></p>
+    <div  class="input-group mb-3 primary">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select News Source</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" id="bbc">bbc-news</a></li>
+          <li><a class="dropdown-item" id="Reuters">Reuters</a></li>
+          <li><a class="dropdown-item" id="Politico">Politico</a></li>
+          <li><a class="dropdown-item" id="cnn">CNN</a></li>
+          <li><a class="dropdown-item" id="toi">the-times-of-india</a></li>
+          <li><a class="dropdown-item" id="gn">google-news</a></li>
+          
+        </ul>
+            <input id="input" class="form-control" aria-label="With textarea"></input>
+      </div>
+      <p id="id1"></p>
+</div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
