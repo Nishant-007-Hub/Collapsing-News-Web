@@ -1,6 +1,4 @@
-// my key = 621fc6a3e4a4479d9429a9168f2fc497
 let id1 = document.getElementById("id1")
-// id1.innerHTML += "kjhgui";
 
 let ip = document.getElementById("input")
 let Reuters = document.getElementById("Reuters")
@@ -49,13 +47,11 @@ gn.addEventListener("click", () => {
 })
     
 function newsApi(var1) {
-    url = `http://newsapi.org/v2/top-headlines?sources=${var1}&apikey=621fc6a3e4a4479d9429a9168f2fc497`
-    // url = url1
+    url = `http://newsapi.org/v2/top-headlines?sources=${var1}&apikey=apikey`
     fetch(url).then(function(response) {
         console.log(response, "response")
         return response.text()
         .then(function (data) {
-            // console.log(data[])
             let articles = JSON.parse(data)
             console.log(articles.articles, "articles")
             let Articles = articles.articles
@@ -81,19 +77,4 @@ function newsApi(var1) {
         })
     })
 }
-// newsApi();
-// xhr.onreadystatechange = function (params) {
-//     console.log("ready state is", xhr.readyState)
-// }
-// xhr.onload = function () {
-//     if (this.status === 200) {
-//         let json = JSON.parse(this.responseText)
-//         let articles = json.articles;
 
-//         console.log(articles)
-//     } else {
-
-//         console.log("error")
-//     }
-// }
-// xhr.send();
